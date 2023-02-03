@@ -1,0 +1,33 @@
+body{
+  font-family: 'Fira Sans', Arial;
+  margin: 0px;
+  color: #141414;
+  /* margin-bottom: 1000px; - retira-se no fim */
+}
+h1, h2, h3, p{
+  margin: 0px;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;  /*bolinhas dos itens*/
+}
+img{
+max-width: 100%;
+height: auto; /*ao definir um valor inicial para a img e preciso esse ajuste*/
+display: block;
+}
+.subtitulo{     /*classe reaproveitadas ficam aqui*/
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 4ch; /*quebra qdo possivel em 4 letras*/
+}
+@media(max-width:800px){
+  .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important; /*tem preferencia independentemente da ordem de leitura do programa*/
+  }
+}

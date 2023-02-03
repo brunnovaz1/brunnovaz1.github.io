@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- comentar: Shift+Alt+A -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <meta name="description" content="Estudante de HTML5, CSS e JavaScript">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/marca.svg" alt="lobo" width="104" height="38">
+    <nav>
+      <ul class="header-menu"> <!--padrao para facilitar entendimento -->
+        <li><a href="#experiencia">Experiência</a></li> <!-- já pula para a seção -->
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="introducao">
+    <img src="/HTML_CSS_JS/Projeto_Portfolio/img/perfil.jpg" alt="Lobo Cinza" width="360" height="520"> <!-- geralmente a metade do tamanho real -->
+    <div>
+      <h1>Desenvolvedor<br>Front End & <br> UX/UI Designer</h1> <!-- <br> quebra o texto -->
+      <p>Localizado em Brasília</p>
+    </div>
+  </main>
+
+  <section class="experiencia" id="experiencia" aria-label="exeperiencia"> <!-- ponto de ref. "id" de mesmo valor direciona o click no menu para a parte do site -->
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo pequenos projetos como O Mustantg GT-500 utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong> JavaScript</strong>. Para aplicativos web como rede social eu trabalhei com <strong>UX</strong> e <strong>UI Desing</strong> do projeto.</p>
+
+      <div class="empresa">
+        <span class="empresa-ano">2027</span>
+        <h3 class="empresa-titulo">VazTech</h3>
+        <span class="empresa-titulo">Desenvolvedor Júnior</span>
+        <p class="empresa-texto">No projeto Mustang eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, prestei consultoria no Desingn.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>JAVA</li>
+        </ul>
+      </div>
+      <div class="empresa">
+        <span class="empresa-ano">2024-2026</span>
+        <h3 class="empresa-titulo">TechnoVaz</h3>
+        <span class="empresa-titulo">Estagiário</span>
+        <p class="empresa-texto">Aperfeiçoei minhas habilidades em programas utilizados na faculdade como SQL, para banco de dados e Visual Studio Code para trabalhar com HTML, CSS e JavaScript.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Visual Studio Code</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="empresa">
+        <span class="empresa-ano">2012-2023</span>
+        <h3 class="empresa-titulo">Ministério da Saúde</h3>
+        <span class="empresa-titulo">Agente Administrativo</span>
+        <p class="empresa-texto">Trabalhando na parte administrativa eu desempenhava a função de edição e formatação de textos utilizando o DreamWeaver. Por um momento trabalhei com InDesing para formatação do Boletim de Serviços. </p>
+        <ul class="empresa-habilidades">
+          <li>Acrobat Reader</li>
+          <li>DreamWeaver</li>
+          <li>InDesing</li>
+          <li>Word</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+      <div>
+        <p class="formacao-texto">Estou cursando atualmente o 3º semestre de <strong>Análise e Desenvolvimento de Sistemas</strong> , em paralelo a isso faço cursos online visando aumentar e qualificar o meu conhecimento na área de desenvolvimento.</p>
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Curso Superior</span>
+            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="faculdade-instituicao">IESB</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Curso</span>
+            <h3 class="faculdade-curso">JavaScript</h3>
+            <span class="faculdade-instituicao">Curso em Vídeo</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Curso</span>
+            <h3 class="faculdade-curso">HTML5 e CSS - Módulo I</h3>
+            <span class="faculdade-instituicao">Curso em Vídeo</span>
+          </li>
+        </ul>
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos em Andamento</h3>
+            <ul>
+              <li>HTML e CSS para Iniciantes <span>30h</span></li>
+              <li>Front End <span>60h</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Básico</span></li>
+              <li>Espanhol <span>/ Básico</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto"> Estou aprendendo a desenvolver projetos e disponível neste momento para elaborar websites teste. Entre em contato comigo e marcamos uma conversa.</p>
+      <ul class="footer-contato">
+        <li>brunovazz@gmail.com</li>
+        <li>+55 61 9999-9999</li>
+        <li><a href="/">@instagram</a></li>
+      </ul>
+      <p class="footer-copy">BrunnoVaz. Alguns direitos reservados.</p>
+
+    </div>
+  </footer>
+
+</body>

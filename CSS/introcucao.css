@@ -1,0 +1,78 @@
+.introducao{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+.introducao h1{
+  font-size: 4.5rem;
+  line-height: 1.125;
+  position: relative;
+
+}
+.introducao h1::before{  /*acrescenta o detalhe*/
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("/HTML_CSS_JS/Projeto_Portfolio/img/detalhe.svg");
+  position: absolute; /*em relacao ao pai*/
+  top: -15px;  /*posicionamento*/
+  left: -45px;
+  z-index: -1;/*desloca para atras*/
+}
+.introducao p{
+font-size: 1.5rem;
+color: #525252;
+}
+@media(max-width:1000px){
+  .introducao h1{
+  font-size: 3rem;
+  grid-template-columns: 1fr 2fr;
+  }
+  .introducao h1::before{
+  width: 90px;
+  height: 90px;
+  top: -35px;  
+  left: -45;
+  }
+  .introducao{
+    padding: 20px 10px;
+    gap: 100px;
+  }
+}
+@media(max-width:600px){
+  .introducao{
+    grid-template-columns: 1fr;
+  }
+  .introducao h1{
+    font-size: 2rem;
+  }
+  .introducao h1::before{
+    width: 80px;
+    height: 80px;
+    top: -45px;  
+    left: -55px;
+  }
+}
+@media(max-width:400px){
+  .introducao{
+    grid-template-columns: 1fr;
+  }
+  .introducao h1{
+    font-size: 2rem;
+    align-content: center;  
+  }
+  .introducao h1::before{
+    width: 80px;
+    height: 80px;
+    top: -45px;  
+    left: -55px;
+  }
+  .introducao p{
+    font-size: 1rem;
+  }
+}
